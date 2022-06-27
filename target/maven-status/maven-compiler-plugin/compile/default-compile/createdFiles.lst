@@ -1,0 +1,15 @@
+com\example\sso\client\utils\SsoSignUtil.class
+com\example\sso\client\interceptor\WebInterceptor.class
+com\example\sso\client\interceptor\WebConfig.class
+com\example\sso\client\utils\SessionListener.class
+com\example\sso\client\constant\SsoConstant.class
+com\example\sso\client\controller\IndexController.class
+com\example\sso\client\utils\CookieUtil.class
+com\example\sso\client\utils\SessionContext.class
+com\example\sso\client\auth\model\MenuTreeAuthVO.class
+com\example\sso\client\auth\model\ApplyAuthVO.class
+com\example\sso\client\controller\LoginController.class
+com\example\sso\client\auth\AuthService.class
+com\example\sso\client\model\ResultModel.class
+com\example\sso\client\utils\SSOClientHelper.class
+com\example\sso\client\config\SysConfigProperty.class
