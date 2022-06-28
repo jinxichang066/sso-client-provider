@@ -84,6 +84,32 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <!--将依赖打进jar包-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.5.5</version>
+                <configuration>
+                    <descriptorRefs>
+                        <!-- 这个jar-with-dependencies是assembly预先写好的一个，组装描述引用 -->
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <!--工程名-->
+                    <finalName>sso-client</finalName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--/将依赖打进jar包-->
+
         </plugins>
     </build>
 
